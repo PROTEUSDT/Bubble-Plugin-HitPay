@@ -1,0 +1,110 @@
+{
+    "auth": "none",
+    "calls": {
+        "AAO": {
+            "headers": {
+                "0": {
+                    "doc": "API Key generated from HitPay",
+                    "key": "X-BUSINESS-API-KEY",
+                    "value": "68a103baef0ef0e7ff3a375008a0ee9fe72872b0fd062f13157ddd9b79b5d486",
+                    "visibility": "public"
+                },
+                "1": {
+                    "key": "X-Requested-With",
+                    "value": "XMLHttpRequest",
+                    "visibility": "hidden"
+                },
+                "2": {
+                    "key": "accept",
+                    "value": "application/json",
+                    "visibility": "hidden"
+                }
+            },
+            "initialized": true,
+            "method": "get",
+            "name": "Get Payment Request",
+            "publish_as": "data",
+            "rank": 0,
+            "ret_value": "api.1665563060825x679884918542041100.plugin_api.AAO",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAO\":{\"caption\":\"Payment Request - Get\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"977d6997-82bc-4849-aaf6-5e9a4f550148\",\"path\":[\"id\"]},\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"sample_value\":\"Jeryl\",\"path\":[\"name\"]},\"_p_email\":{\"ret_value\":\"text\",\"caption\":\"email\",\"sample_value\":null,\"path\":[\"email\"]},\"_p_phone\":{\"ret_value\":\"text\",\"caption\":\"phone\",\"sample_value\":\"+6596968095\",\"path\":[\"phone\"]},\"_p_amount\":{\"ret_value\":\"text\",\"caption\":\"amount\",\"sample_value\":\"50.00\",\"path\":[\"amount\"]},\"_p_currency\":{\"ret_value\":\"text\",\"caption\":\"currency\",\"sample_value\":\"SGD\",\"path\":[\"currency\"]},\"_p_status\":{\"ret_value\":\"text\",\"caption\":\"status\",\"sample_value\":\"pending\",\"path\":[\"status\"]},\"_p_purpose\":{\"ret_value\":\"text\",\"caption\":\"purpose\",\"sample_value\":\"Test Payment\",\"path\":[\"purpose\"]},\"_p_reference_number\":{\"ret_value\":\"text\",\"caption\":\"reference_number\",\"sample_value\":null,\"path\":[\"reference_number\"]},\"_p_payment_methods.\":{\"ret_value\":\"text\",\"caption\":\"payment_methods \",\"sample_value\":\"paynow_online\",\"path\":[\"payment_methods\",\"\"]},\"_p_url\":{\"ret_value\":\"text\",\"caption\":\"url\",\"sample_value\":\"https://securecheckout.sandbox.hit-pay.com/payment-request/@proteus-dt/977d6997-82bc-4849-aaf6-5e9a4f550148/checkout\",\"path\":[\"url\"]},\"_p_redirect_url\":{\"ret_value\":\"text\",\"caption\":\"redirect_url\",\"sample_value\":\"https://proteus-dt.com\",\"path\":[\"redirect_url\"]},\"_p_webhook\":{\"ret_value\":\"text\",\"caption\":\"webhook\",\"sample_value\":null,\"path\":[\"webhook\"]},\"_p_send_sms\":{\"ret_value\":\"boolean\",\"caption\":\"send_sms\",\"sample_value\":true,\"path\":[\"send_sms\"]},\"_p_send_email\":{\"ret_value\":\"boolean\",\"caption\":\"send_email\",\"sample_value\":false,\"path\":[\"send_email\"]},\"_p_sms_status\":{\"ret_value\":\"text\",\"caption\":\"sms_status\",\"sample_value\":\"pending\",\"path\":[\"sms_status\"]},\"_p_email_status\":{\"ret_value\":\"text\",\"caption\":\"email_status\",\"sample_value\":\"pending\",\"path\":[\"email_status\"]},\"_p_allow_repeated_payments\":{\"ret_value\":\"boolean\",\"caption\":\"allow_repeated_payments\",\"sample_value\":false,\"path\":[\"allow_repeated_payments\"]},\"_p_expiry_date\":{\"ret_value\":\"text\",\"caption\":\"expiry_date\",\"sample_value\":\"2022-11-12T16:16:22\",\"path\":[\"expiry_date\"]},\"_p_created_at\":{\"ret_value\":\"text\",\"caption\":\"created_at\",\"sample_value\":\"2022-10-13T16:16:22\",\"path\":[\"created_at\"]},\"_p_updated_at\":{\"ret_value\":\"text\",\"caption\":\"updated_at\",\"sample_value\":\"2022-10-13T16:16:22\",\"path\":[\"updated_at\"]}}}}",
+            "url": "https://api.[dev-mode]hit-pay.com/v1/payment-requests/[transaction-id]",
+            "url_params": {
+                "AAV": {
+                    "doc": "",
+                    "key": "transaction-id",
+                    "private": true,
+                    "value": "977d6997-82bc-4849-aaf6-5e9a4f550148"
+                },
+                "ABi": {
+                    "allow_blank": true,
+                    "doc": "If Live set to empty.",
+                    "key": "dev-mode",
+                    "private": true,
+                    "value": "sandbox."
+                }
+            }
+        },
+        "ABY": {
+            "headers": {
+                "ABb": {
+                    "doc": "API Key generated from HitPay",
+                    "key": "X-BUSINESS-API-KEY",
+                    "private": true,
+                    "value": "68a103baef0ef0e7ff3a375008a0ee9fe72872b0fd062f13157ddd9b79b5d486",
+                    "visibility": "public"
+                },
+                "ABc": {
+                    "key": "X-Requested-With",
+                    "private": true,
+                    "value": "XMLHttpRequest",
+                    "visibility": "hidden"
+                },
+                "ABd": {
+                    "key": "accept",
+                    "private": true,
+                    "value": "application/json",
+                    "visibility": "hidden"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Create Refund Transaction",
+            "params": {
+                "ABZ": {
+                    "key": "payment_id",
+                    "private": true,
+                    "value": "977f193a-ddca-411d-80f1-97f38d47e0c2"
+                },
+                "ABa": {
+                    "key": "amount",
+                    "private": true,
+                    "value": "50"
+                }
+            },
+            "publish_as": "action",
+            "rank": 1,
+            "ret_value": "api.1665563060825x679884918542041100.plugin_api.ABY",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ABY\":{\"caption\":\"Refund - Create\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"978b1a11-2493-495a-9503-9172df8abc6d\",\"path\":[\"id\"]},\"_p_payment_id\":{\"ret_value\":\"text\",\"caption\":\"payment_id\",\"sample_value\":\"977f193a-ddca-411d-80f1-97f38d47e0c2\",\"path\":[\"payment_id\"]},\"_p_amount_refunded\":{\"ret_value\":\"number\",\"caption\":\"amount_refunded\",\"sample_value\":50,\"path\":[\"amount_refunded\"]},\"_p_total_amount\":{\"ret_value\":\"number\",\"caption\":\"total_amount\",\"sample_value\":500,\"path\":[\"total_amount\"]},\"_p_currency\":{\"ret_value\":\"text\",\"caption\":\"currency\",\"sample_value\":\"sgd\",\"path\":[\"currency\"]},\"_p_status\":{\"ret_value\":\"text\",\"caption\":\"status\",\"sample_value\":null,\"path\":[\"status\"]},\"_p_payment_method\":{\"ret_value\":\"text\",\"caption\":\"payment_method\",\"sample_value\":\"card\",\"path\":[\"payment_method\"]},\"_p_created_at\":{\"ret_value\":\"text\",\"caption\":\"created_at\",\"sample_value\":\"2022-10-20T11:35:35\",\"path\":[\"created_at\"]}}}}",
+            "url": "https://api.[dev-mode]hit-pay.com/v1/refund",
+            "url_params": {
+                "ABj": {
+                    "doc": "If Live set to empty.",
+                    "key": "dev-mode",
+                    "private": true,
+                    "value": "sandbox."
+                }
+            }
+        },
+        "ACD": {
+            "method": "get",
+            "name": "Get Subscription Plan",
+            "publish_as": "data",
+            "rank": 2,
+            "should_reinitialize": true
+        }
+    },
+    "human": "HitPay",
+    "token_param_name": "X-BUSINESS-API-KEY"
+}

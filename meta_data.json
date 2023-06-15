@@ -1,0 +1,15 @@
+{
+    "categories": {
+        "0": "payment",
+        "1": "ecommerce",
+        "2": "small business"
+    },
+    "demo_page": "http://proteus-tech-demo.bubbleapps.io/version-test/hitpay",
+    "description": "A payment plugin for marketplaces and e-commerce site.\nHitPay is a one-stop payment platform for SMEs, on a mission to empower businesses with easy access to digital payments.\n\n\nTo discover all the payment options supported by HitPay, click on the following link:\nhttps://www.hitpayapp.com/",
+    "image": "//s3.amazonaws.com/appforest_uf/f1679360719856x450200139685100740/Logo-Grey.png",
+    "license": "open_source",
+    "link": "",
+    "name": "HitPay",
+    "plugin_instructions": "- Setup -\n\n- To use the plugin, you will need to have \n1. A HitPay account (Live Environment)\n2. A HitPay sandbox account (Test Environment)\n3. API Keys generated from the accounts.\n\n\n- Documentation -\nhttps://docs.hitpayapp.com/docs/getting-started-1\n\n\n- Demo -\nhttp://proteus-tech-demo.bubbleapps.io/version-test/hitpay",
+    "sa_node_version": 14
+}

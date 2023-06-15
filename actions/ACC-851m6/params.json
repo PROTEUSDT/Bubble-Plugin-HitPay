@@ -1,0 +1,168 @@
+{
+    "category": "payment",
+    "display": "Create Payment Request [Subscription]",
+    "fields": {
+        "ABk": {
+            "caption": "General Information",
+            "editor": "Label",
+            "name": "header_general",
+            "rank": 0
+        },
+        "ABl": {
+            "caption": "Redirect URL",
+            "editor": "DynamicValue",
+            "name": "general_redirect_url",
+            "optional": true,
+            "rank": 1,
+            "value": "text"
+        },
+        "ABm": {
+            "caption": "Webhook",
+            "editor": "DynamicValue",
+            "name": "general_webhook",
+            "optional": true,
+            "rank": 2,
+            "value": "text"
+        },
+        "ABn": {
+            "caption": "Send Email",
+            "default_val": false,
+            "editor": "DynamicValue",
+            "name": "general_send_email",
+            "optional": true,
+            "rank": 3,
+            "value": "boolean"
+        },
+        "ABo": {
+            "caption": "Send SMS",
+            "default_val": false,
+            "editor": "DynamicValue",
+            "name": "general_send_sms",
+            "optional": true,
+            "rank": 4,
+            "value": "boolean"
+        },
+        "ABp": {
+            "caption": "Expires After",
+            "default_val": "30 mins",
+            "doc": "E.g \"30 mins\" Other supported keys are \"mins\", \"hours\", \"days\"",
+            "editor": "DynamicValue",
+            "name": "general_expires_after",
+            "optional": true,
+            "rank": 5,
+            "value": "text"
+        },
+        "ABq": {
+            "caption": "Transaction Information",
+            "editor": "Label",
+            "name": "header_transaction",
+            "rank": 6
+        },
+        "ABr": {
+            "caption": "Amount",
+            "editor": "DynamicValue",
+            "name": "transaction_amount",
+            "rank": 7,
+            "value": "number"
+        },
+        "ABs": {
+            "caption": "Currency",
+            "default_val": "SGD",
+            "doc": "It's required field. Currency related to the payment. Example: SGD",
+            "editor": "DynamicValue",
+            "name": "transaction_currency",
+            "rank": 8,
+            "value": "text"
+        },
+        "ABt": {
+            "caption": "Purpose",
+            "editor": "DynamicValue",
+            "name": "transaction_purpose",
+            "optional": true,
+            "rank": 9,
+            "value": "text"
+        },
+        "ABu": {
+            "caption": "Reference",
+            "doc": "Arbitrary reference number that you can map to your internal reference number. This value cannot be edited by the customer",
+            "editor": "DynamicValue",
+            "name": "transaction_reference",
+            "optional": true,
+            "rank": 10,
+            "value": "text"
+        },
+        "ABv": {
+            "caption": "Buyer Information",
+            "editor": "Label",
+            "name": "header_buyer",
+            "rank": 11
+        },
+        "ABw": {
+            "caption": "Name",
+            "editor": "DynamicValue",
+            "name": "buyer_name",
+            "optional": true,
+            "rank": 12,
+            "value": "text"
+        },
+        "ABx": {
+            "caption": "Email",
+            "editor": "DynamicValue",
+            "name": "buyer_email",
+            "optional": true,
+            "rank": 13,
+            "value": "text"
+        },
+        "ABy": {
+            "caption": "Phone Number",
+            "editor": "DynamicValue",
+            "name": "buyer_phone",
+            "optional": true,
+            "rank": 14,
+            "value": "text"
+        },
+        "ABz": {
+            "caption": "API Information",
+            "editor": "Label",
+            "name": "header_api",
+            "rank": 15
+        },
+        "ACA": {
+            "caption": "API Key",
+            "default_val": "68a103baef0ef0e7ff3a375008a0ee9fe72872b0fd062f13157ddd9b79b5d486",
+            "editor": "DynamicValue",
+            "name": "api_key",
+            "rank": 16,
+            "value": "text"
+        },
+        "ACB": {
+            "caption": "Dev Version",
+            "default_val": true,
+            "editor": "DynamicValue",
+            "name": "dev_version",
+            "rank": 17,
+            "value": "boolean"
+        }
+    },
+    "return_value": {
+        "ABU": {
+            "caption": "Error",
+            "name": "return_error",
+            "rank": 0,
+            "value": "text"
+        },
+        "ABV": {
+            "caption": "Transaction ID",
+            "name": "return_id",
+            "rank": 1,
+            "value": "text"
+        },
+        "ABX": {
+            "caption": "URL",
+            "name": "return_url",
+            "rank": 2,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}
